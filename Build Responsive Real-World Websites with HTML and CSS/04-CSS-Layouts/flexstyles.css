@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #444;
+  font-weight: 600;
+}
+
+.container {
+  width: 900px;
+  /* height: auto; */
+  margin: 30px auto;
+  border: 5px solid black;
+  position: relative;
+}
+
+.container::after {
+  content: "SALE";
+  color: white;
+  letter-spacing: 0.5em;
+  font-size: x-small;
+  width: 70px;
+  height: 30px;
+  background-color: red;
+  position: absolute;
+  top: -15px;
+  left: -35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: larger;
+  letter-spacing: 0.1px;
+}
+h2 {
+  margin-bottom: 15px;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  color: black;
+}
+
+strong {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.price {
+  float: left;
+}
+#shipping-text {
+  letter-spacing: 0.001rem;
+  font-size: small;
+  text-transform: uppercase;
+  color: rgb(102, 102, 102);
+  font-weight: 700;
+  float: right;
+  padding: 12px 0;
+  box-shadow: #444;
+}
+
+a {
+  color: #444;
+}
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: square;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+}
+
+button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 500;
+  font-size: 30px;
+  padding: 10px;
+  clear: both;
+}
+
+button:hover {
+  background-color: unset;
+  color: black;
+  cursor: pointer;
+  border-top: 5px solid;
+}
+
+.main-img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.paragraph1 {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  clear: both;
+}
+
+.paragraph2 {
+  margin-bottom: 40px;
+}
+
+/* using flex *?
+/* .colored-container {
+  height: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  column-gap: 25px;
+} */
+
+.colored-container {
+  margin-bottom: 20px;
+}
+
+.box {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.black {
+  background-color: black;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.green {
+  background-color: greenyellow;
+}
+
+.brown {
+  background-color: rgb(150, 25, 25);
+}
+
+.img-section {
+  width: 33.33%;
+  height: 296px;
+  float: left;
+  /* border: 1px solid red; */
+}
+
+.second-section {
+  width: 33.33%;
+  height: 296px;
+  float: left;
+  /* border: 1px solid blue; */
+  padding: 20px 15px 0 40px;
+  margin: 0 auto;
+}
+
+.third-section {
+  width: 33.33%;
+  height: 296px;
+  float: left;
+  /* border: 1px solid green; */
+  padding: 20px 40px 0 15px;
+  margin: 0 auto;
+}
+
+.third-section h2 {
+  padding-top: 8px;
+}
+
+li {
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
