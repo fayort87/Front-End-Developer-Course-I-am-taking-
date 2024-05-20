@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Application Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        overflow: hidden;
+      }
+
+      .container {
+        max-width: 100vw;
+        max-height: 100vh;
+        display: flex;
+      }
+      .left-container {
+        width: 5%;
+        min-height: 100vh;
+        background-color: #343433;
+        text-align: center;
+      }
+
+      .left-container p {
+        margin-top: 16px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .right-container {
+        width: 95%;
+        /* height: 100%; */
+        /* background-color: antiquewhite; test color */
+        display: flex;
+        flex-direction: column;
+      }
+
+      .main-top-container {
+        max-width: 100%;
+        padding: 24px 0;
+        background-color: #7048e8;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding-left: 32px;
+        position: relative;
+      }
+
+      .main-top-container p {
+        font-size: 12px;
+        font-weight: bold;
+        color: #fff;
+
+        padding: 6px 12px;
+        background-color: #5f3dc4;
+      }
+
+      .main-top-container .trash {
+        position: absolute;
+        right: 20px;
+        background-color: #d6336c;
+      }
+
+      .main-container {
+        display: flex;
+      }
+      .main-left-container {
+        width: 25%;
+        min-height: 100%;
+        background-color: #dee2e6;
+        overflow: scroll;
+      }
+
+      .main-left-container P {
+        background-color: #adb5bd;
+        padding: 24px 32px;
+        text-align: center;
+        margin: 32px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .main-middle-container {
+        text-align: center;
+        width: 60%;
+      }
+      .main-middle-container p,
+      .main-right-container p {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 20px auto;
+      }
+
+      .main-right-container {
+        width: 15%;
+        background-color: #dee2e6;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-container"><p>Nav</p></div>
+      <div class="right-container">
+        <div class="main-top-container">
+          <p>New</p>
+          <p>Reply</p>
+          <p>Forward</p>
+          <p>Mark unread</p>
+          <p class="trash">Trash</p>
+        </div>
+        <div class="main-container">
+          <div class="main-left-container">
+            <p>Email 1</p>
+            <p>Email 2</p>
+            <p>Email 3</p>
+            <p>Email 4</p>
+            <p>Email 5</p>
+            <p>Email 6</p>
+            <p>Email 7</p>
+            <p>Email 8</p>
+            <p>Email 9</p>
+            <p>Email 10</p>
+          </div>
+          <div class="main-middle-container"><p>Email view</p></div>
+          <div class="main-right-container"><p>Additional info</p></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
